@@ -15,6 +15,10 @@ body {
     text-align: center;
 }
 
+.article-snippet-section{ /* add border thickness -> center it on page -> change font some way for title compared to */
+    border-color: black;
+}
+
 nav{
     width: 100%;
     text-align: center;
