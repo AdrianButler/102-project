@@ -25,13 +25,10 @@ function toggleDarkMode()
     if (colorThemeIconElement.getAttribute("src") == moonIconPath)
     {
         colorThemeIconElement.src = sunIconPath;
-        console.log("sun");
     }
     else 
     {
-        console.log(colorThemeIconElement.src);
         colorThemeIconElement.src = moonIconPath;
-        console.log("moon");
     }
 
     document.body.classList.toggle("dark-mode");
