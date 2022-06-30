@@ -38,6 +38,11 @@ function checkInput()
         randomNumberResultElement.innerHTML = "You guessed right!"
     }
 
+    else if(typeof(randomNumberInputElement.value) != typeof(randomNumber))
+    {
+        randomNumberResultElement.innerHTML = "I said number doofus."
+    }
+
     else
     {
         randomNumberResultElement.innerHTML = "Nope!"
