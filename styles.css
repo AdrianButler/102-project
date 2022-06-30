@@ -1,7 +1,15 @@
+html {
+    /* min-height: 100%; */
+}
+
 body {
     margin: 0;
     background-color: #DAE0E6;
     width: 100%;
+    min-height: 100%;
+}
+
+main {
 }
 
 section {
@@ -13,11 +21,25 @@ section {
     margin-bottom: 1%;
     min-width: 20%;
     max-width: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+footer {
+    
+}
+
+#numberGuessBox {
+    margin-left: auto;
+    margin-right: 0;
+    border-style: solid;
+    width: fit-content;
 }
 
 .dark-mode section
 {
-    border-color: #54968a;
+    border-color: #C8C8C8;
 }
 
 #date-and-time
