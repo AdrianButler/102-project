@@ -1,19 +1,42 @@
 body {
     margin: 0;
     background-color: #DAE0E6;
+    width: 100%;
 }
 
-h1.dark-mode
-{
+section {
+    border-style: solid; /* change color for dark mode */
+    text-align: center;
+
+    margin: auto 500px 10px 500px;
+    height: fit-content;
 }
 
-p.dark-mode
+#date-and-time
 {
+    font-size: medium;
+    width: fit-content;
 }
 
 body.dark-mode {
-    background-color: #121212;
-    color: white;
+    background-color: #121212; 
+    color: #C8C8C8;
+}
+
+.dark-mode a
+{
+    color: #88C8CB;
+}
+
+.dark-mode nav ul li a {
+    color: #C08C8C;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+
 }
 
 #color-theme-switch
@@ -41,6 +64,7 @@ body.dark-mode {
 
 #home-title {
     text-align: center;
+    width: 100%;
 }
 
 .article-snippet-section{ /* add border thickness -> center it on page -> change font some way for title compared to */
@@ -65,13 +89,13 @@ nav ul {
     position: absolute; 
  }
  
- nav li {
-    display:inline-flex;
+ nav ul li {
+    display: inline-block;
+    
  }
 
- nav ul li a {
+ nav ul li a { /* center this or the news */
     font-style: none;
     text-decoration: none;
     color: #54968a;
-    margin-right: 50px;
  }
