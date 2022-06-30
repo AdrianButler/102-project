@@ -52,7 +52,7 @@ function loopDemo()
         countElement.appendChild(document.createTextNode((i + 1).toString()));
 
         loopDemonstrationElement.appendChild(countElement);
-        loopDemonstrationElement.appendChild(imageElement)
+        loopDemonstrationElement.appendChild(imageElement);
     }
 }
 
@@ -61,17 +61,17 @@ function checkInput()
 {
     if (randomNumberInputElement.value == randomNumber)
     {
-        randomNumberResultElement.innerHTML = "You guessed right!"
+        randomNumberResultElement.innerHTML = "You guessed right!";
     }
 
-    else if(typeof(randomNumberInputElement.value) != typeof(randomNumber))
+    else if(typeof(randomNumberInputElement.value) == typeof(randomNumber))
     {
-        randomNumberResultElement.innerHTML = "I said number doofus."
+        randomNumberResultElement.innerHTML = "Nope!";
     }
 
     else
     {
-        randomNumberResultElement.innerHTML = "Nope!"
+        randomNumberResultElement.innerHTML = "I said number doofus.";
     }
 }
 
