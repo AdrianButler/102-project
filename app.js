@@ -64,6 +64,9 @@ function checkInput()
         randomNumberResultElement.innerHTML = "You guessed right!";
     }
 
+    console.log(typeof(randomNumberInputElement.value));
+    console.log(typeof(randomNumber))
+    
     else if(typeof(randomNumberInputElement.value) == typeof(randomNumber))
     {
         randomNumberResultElement.innerHTML = "Nope!";
