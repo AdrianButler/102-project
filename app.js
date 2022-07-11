@@ -64,17 +64,15 @@ function checkInput()
         randomNumberResultElement.innerHTML = "You guessed right!";
     }
 
-    console.log(typeof(randomNumberInputElement.value));
-    console.log(typeof(randomNumber))
-    
-    else if(typeof(randomNumberInputElement.value) == typeof(randomNumber))
+    else if (Number.isInteger(Number(randomNumberInputElement.value)))
     {
-        randomNumberResultElement.innerHTML = "Nope!";
+        randomNumberResultElement.innerHTML = "Nope! Try again.";
     }
 
     else
     {
-        randomNumberResultElement.innerHTML = "I said number doofus.";
+        console.log(Number.isInteger(randomNumberInputElement.value));
+        randomNumberResultElement.innerHTML = "I said number, doofus!";
     }
 }
 
